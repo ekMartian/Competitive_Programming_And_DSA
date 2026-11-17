@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+
+# Compiled binaries
+*.exe
+*.EXE
+*.out
+*.xe
+*.ex
+*.exze
+*.exer
+*.exde
+*.ede
+*.ece
+a,exe
+virtualia/div2-1048/b
+virtualia/div2-1098/a
+virtualia/div2-1089/a
+tle_sheet/1200rated/a

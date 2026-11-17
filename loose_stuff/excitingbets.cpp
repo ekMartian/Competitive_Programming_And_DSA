@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+// INT_MAX
+// #include <limits>
+//int min_val = std::numeric_limits<int>::max();
+//#include <climits>
+//int min_val = INT_MAX; 
+//look at all the commen eveyrhwere and add them to templates
+//int min_val = arr[0];
+//for(int i = 1; i < n; i++) { ... }
+
+/*In competitive programming, both are widely used, but the "best" choice depends on your priority: speed of typing versus safety and flexibility. 1. INT_MAX (The Competitive Choice) Competitive programmers often prefer INT_MAX (from <climits>) because it is much shorter to type. In a contest where every second counts, typing INT_MAX is faster than std::numeric_limits<int>::max(). Pros: Short, standard across all competitive platforms.Cons: Only works for int. If you switch your variable to long long, you must remember to change INT_MAX to LLONG_MAX, or your code will fail on large test cases. 2. std::numeric_limits<int>::max() (The Robust Choice) This is the modern C++ standard (from <limits>). It is generally considered "better practice" because it is more type-safe. Pros: Works with templates. If you use a typedef (like typedef long long ll;), you can use std::numeric_limits<ll>::max() and it will always be correct for that type.Cons: Very verbose to type during a contest. 3. The "Pro" Trick: 1e9 or 2e18 Many top-tier competitive programmers avoid both and use scientific notation because it is even faster to type and easier to reason about regarding potential overflow. For int: Use 1e9 or 1e9 + 7.int min_val = 1e9; (\(1,000,000,000\))This fits comfortably in a standard int (which goes up to \(\approx 2\times 10^{9}\)).For long long: Use 1e18 or 2e18.long long min_val = 2e18;This is safe because long long goes up to \(\approx 9\times 10^{18}\). Summary Recommendation for 2026 If you are a beginner: Use INT_MAX (with #include <climits>) or LLONG_MAX. It is standard and simple.If you use long long for everything: Use 1e18 to avoid accidental overflow when adding values (like min_val + extra_cost).In 2026 contests: Most modern platforms use #include <bits/stdc++.h>, which includes both headers for you automaticall*/
